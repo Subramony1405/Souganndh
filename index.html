@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="SringarabySouganndh — jewellery that celebrates you. Explore our collections and enquire through Instagram or WhatsApp.">
+<title>SringarabySouganndh | Fine Jewellery</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
+:root{--wine:#4b0d24;--wine2:#6d1736;--gold:#c99a45;--cream:#fbf6ed;--ink:#211a19;--muted:#746866}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:Inter,Arial,sans-serif}
+a{color:inherit;text-decoration:none}
+.hero{min-height:100vh;background:linear-gradient(135deg,rgba(39,7,19,.88),rgba(99,22,49,.72)),url('assets/founder.jpg') center/cover;display:flex;align-items:center;justify-content:center;text-align:center;padding:30px;color:#fff;position:relative}
+.hero:after{content:"";position:absolute;inset:18px;border:1px solid rgba(222,184,100,.65);pointer-events:none}
+.hero-inner{max-width:760px;position:relative;z-index:1}
+.logo{width:min(210px,48vw);border-radius:50%;margin:0 auto 25px;box-shadow:0 18px 60px rgba(0,0,0,.3)}
+.kicker{letter-spacing:.3em;text-transform:uppercase;font-size:.72rem;color:#f0d39a}
+h1,h2,h3{font-family:"Cormorant Garamond",serif}
+h1{font-size:clamp(3.2rem,9vw,7rem);line-height:.86;margin:14px 0}
+.hero p{font-family:"Cormorant Garamond",serif;font-size:1.35rem;max-width:600px;margin:20px auto 32px}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 24px;border:1px solid var(--gold);background:var(--gold);color:#2c160d;border-radius:999px;font-weight:600;margin:5px;transition:.2s}
+.btn:hover{transform:translateY(-2px);filter:brightness(1.05)}
+.btn.ghost{background:transparent;color:#fff}
+section{padding:85px 7vw}.intro{text-align:center;max-width:850px;margin:auto}
+.eyebrow{color:var(--wine2);letter-spacing:.22em;text-transform:uppercase;font-size:.72rem;font-weight:600}
+h2{font-size:clamp(2.4rem,5vw,4.2rem);margin:10px 0 18px;color:var(--wine)}
+.lead{font-family:"Cormorant Garamond",serif;font-size:1.35rem;line-height:1.55;color:var(--muted)}
+.about{background:#fff}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center;max-width:1200px;margin:auto}
+.about img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:5px}
+.story p{line-height:1.8;color:var(--muted)}
+.quote{font-family:"Cormorant Garamond",serif;font-size:1.8rem;color:var(--wine);border-left:2px solid var(--gold);padding-left:20px;margin-top:28px}
+.collection{background:var(--cream)}
+.grid{max-width:1250px;margin:40px auto 0;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:#fff;overflow:hidden;box-shadow:0 8px 28px rgba(75,13,36,.08)}
+.card img{width:100%;height:360px;object-fit:cover;display:block}
+.card-body{padding:18px}.card h3{font-size:1.7rem;margin:0 0 4px;color:var(--wine)}.card p{margin:0;color:var(--muted);font-size:.9rem}
+.mosaic{display:grid;grid-template-columns:2fr 1fr 1fr;grid-auto-rows:240px;gap:12px;max-width:1250px;margin:40px auto 0}
+.mosaic img{width:100%;height:100%;object-fit:cover}.mosaic img:first-child{grid-row:span 2}
+.cta{background:var(--wine);color:#fff;text-align:center}.cta h2{color:#fff}.cta .lead{color:#eadedb}
+.contact{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;margin-top:25px}
+footer{background:#250710;color:#eadedb;text-align:center;padding:32px 20px;font-size:.85rem}
+footer strong{color:#fff}
+@media(max-width:800px){.about-grid{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}.card img{height:300px}.mosaic{grid-template-columns:1fr 1fr;grid-auto-rows:190px}.mosaic img:first-child{grid-row:span 2}}
+@media(max-width:520px){section{padding:65px 5vw}.grid{grid-template-columns:1fr}.card img{height:340px}.hero:after{inset:10px}.logo{width:175px}}
+
+.about-us{background:#f4eadf}
+.about-photo img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:5px;box-shadow:0 18px 45px rgba(75,13,36,.12)}
+
+
+.about-us{background:#f4eadf}
+.about-us .about-grid{margin-bottom:55px}
+.about-us .about-photo img{box-shadow:0 18px 45px rgba(75,13,36,.12)}
+.story-photo{max-width:980px;margin:0 auto}
+.story-photo img{width:100%;display:block;max-height:720px;object-fit:cover;object-position:center 38%;border-radius:5px;box-shadow:0 18px 45px rgba(75,13,36,.12)}
+
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="hero-inner">
+    <img class="logo" src="assets/logo.jpg" alt="SringarabySouganndh logo">
+    <div class="kicker">Fine Jewellery • Crafted to celebrate you</div>
+    <h1>SringarabySouganndh</h1>
+    <p>Grateful to adorn your journey — where every piece celebrates you.</p>
+    <a class="btn" href="#collection">Explore Collection</a>
+    <a class="btn ghost" href="#contact">Order / Enquire</a>
+  </div>
+</header>
+
+<section>
+  <div class="intro">
+    <div class="eyebrow">Welcome</div>
+    <h2>Jewellery with a story.</h2>
+    <p class="lead">Inspired by tradition, colour and the beauty of everyday celebrations, SringarabySouganndh brings together pieces made to be worn, cherished and remembered.</p>
+  </div>
+</section>
+
+<section class="about">
+  <div class="about-grid">
+    <img src="assets/founder.jpg" alt="SringarabySouganndh founder wearing jewellery">
+    <div class="story">
+      <div class="eyebrow">Our story</div>
+      <h2>Made with love. Worn with meaning.</h2>
+      <p>SringarabySouganndh is a jewellery page built around the joy of adorning yourself and celebrating the moments that matter. From traditional-inspired designs to statement pieces, every collection is chosen with warmth, detail and a love for Indian aesthetics.</p>
+      <p>We are back with a renewed beginning and a promise to serve every customer with greater care, consistency and gratitude.</p>
+      <div class="quote">“Every piece celebrates you.”</div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="about-us">
+  <div class="about-grid">
+    <div class="about-photo">
+      <img src="assets/us.jpg" alt="The founders of SringarabySouganndh together">
+    </div>
+    <div class="story">
+      <div class="eyebrow">About us</div>
+      <h2>A little story behind SringarabySouganndh.</h2>
+      <p>SringarabySouganndh is a jewellery journey built with love, creativity and a deep appreciation for the beauty of Indian adornment. What began as a passion for beautiful pieces and meaningful styling grew into a little space where tradition, colour and individuality come together.</p>
+      <p>We believe jewellery is more than an accessory — it becomes part of your celebrations, your memories and the way you express yourself. Every collection we bring is chosen with that feeling in mind, with a promise to serve our customers with warmth, care and gratitude.</p>
+      <p>After an unexpected personal commitment took us away from the business for a while, we are beginning again — with a renewed page, fresh energy and the same love for jewellery. Thank you for finding us again and for being part of our journey.</p>
+      <div class="quote">“Grateful to adorn your journey — where every piece celebrates you.”</div>
+    </div>
+  </div>
+  <div class="story-photo">
+    <img src="assets/wedding-story.jpg" alt="A wedding moment featuring traditional jewellery">
+  </div>
+</section>
+
+
+<section class="collection" id="collection">
+  <div class="intro">
+    <div class="eyebrow">Selected pieces</div>
+    <h2>Our Collection</h2>
+    <p class="lead">A glimpse of the jewellery currently featured on our page.</p>
+  </div>
+  <div class="grid">
+    <article class="card"><img src="assets/jewellery-01.jpg" alt="Traditional necklace and earrings"><div class="card-body"><h3>Heritage Florals</h3><p>Colourful, traditional-inspired detailing.</p></div></article>
+    <article class="card"><img src="assets/jewellery-02.jpg" alt="Gold and temple inspired jewellery"><div class="card-body"><h3>Temple Elegance</h3><p>Classic gold-toned motifs with a festive feel.</p></div></article>
+    <article class="card"><img src="assets/jewellery-03.jpg" alt="Jewellery set with earrings"><div class="card-body"><h3>Everyday Grace</h3><p>Designed to add a little celebration to your day.</p></div></article>
+    <article class="card"><img src="assets/jewellery-04.jpg" alt="Jewellery held in hand"><div class="card-body"><h3>Details to Adore</h3><p>Close-up craftsmanship and colourful accents.</p></div></article>
+    <article class="card"><img src="assets/jewellery-05.jpg" alt="Traditional earrings"><div class="card-body"><h3>Divine Drops</h3><p>Statement earrings inspired by heritage.</p></div></article>
+    <article class="card"><img src="assets/jewellery-06.jpg" alt="Gold pendant"><div class="card-body"><h3>Classic Coin</h3><p>A timeless temple-inspired pendant style.</p></div></article>
+  </div>
+</section>
+
+<section>
+  <div class="intro">
+    <div class="eyebrow">See it styled</div>
+    <h2>From our little jewellery world.</h2>
+  </div>
+  <div class="mosaic">
+    <img src="assets/jewellery-07.jpg" alt="Jewellery styled on saree">
+    <img src="assets/jewellery-01.jpg" alt="Jewellery detail">
+    <img src="assets/jewellery-03.jpg" alt="Jewellery set">
+    <img src="assets/jewellery-05.jpg" alt="Traditional earrings">
+    <img src="assets/founder.jpg" alt="Jewellery styled on founder">
+  </div>
+</section>
+
+<section class="cta" id="contact">
+  <div class="intro">
+    <div class="eyebrow" style="color:#e5bd72">Come, celebrate with us</div>
+    <h2>Find your next favourite piece.</h2>
+    <p class="lead">Browse our latest collections on Instagram or message us on WhatsApp to enquire and place an order.</p>
+    <div class="contact">
+      
+      <a class="btn" href="https://www.instagram.com/sringarabysouganndh?stkn=MWo1dXNsendrZW5ueg==" target="_blank" rel="noopener">Instagram ↗</a>
+      <a class="btn" href="https://wa.me/917306102762?text=Hello%20SringarabySouganndh%2C%20I%27d%20like%20to%20explore%20your%20jewellery%20collections." target="_blank" rel="noopener">WhatsApp ↗</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <strong>SringarabySouganndh</strong><br>
+  Fine Jewellery • Every piece celebrates you.<br><br>
+  © 2026 SringarabySouganndh<br><br>
+  <a href="https://www.instagram.com/sringarabysouganndh?stkn=MWo1dXNsendrZW5ueg==" target="_blank" rel="noopener">@sringarabysouganndh</a>
+  &nbsp; • &nbsp; +91 73061 02762
+  &nbsp; • &nbsp; <a href="mailto:subrusound@gmail.com">subrusound@gmail.com</a><br>
+  TC 40/270, SPASRA 27, Second Puthen Street, Manacaud, Trivandrum
+</footer>
+</body>
+</html>
