@@ -1,15 +1,16 @@
-# SringarabySouganndh — Mobile-first static website
+SringarabySouganndh — portrait-ready website
 
-Open `index.html` in a browser to preview the website.
+Updated build:
+- Added Jewellery 8 (Royal Elephants) using the latest supplied jewellery photo.
+- Replaced Styled by Us #5 with the latest supplied model photo, placed beside the festive-glow card on portrait screens.
+- Replaced logo.jpg with the supplied circular SringarabySouganndh logo, cropped to the artwork circle.
+- Switched typography to Cormorant Garamond + Manrope for a more elegant, readable look.
+- Reduced oversized headings, enlarged small body/contact text, and tightened portrait-safe spacing.
+- Kept the lookbook heading on one line on portrait screens.
+- Increased the top-left logo and Collection/Contact controls with inline icons.
+- Enlarged Explore Collection / Enquire with us buttons.
+- Enlarged Instagram, WhatsApp, Email and Visit/Contact cards and icons.
+- Ensured every <img> photo is used only once in the page.
+- Kept horizontal overflow disabled so portrait users can scroll vertically without dragging sideways.
 
-The site has been rebuilt around the latest images supplied in the chat. It is designed mobile-first for portrait screens, with responsive layouts for larger screens, no intentional horizontal overflow, and inline Instagram / WhatsApp icons and links. Typography uses Playfair Display for the luxury headings and DM Sans for readable body text, with portrait-specific sizing and spacing.
-
-All website images are stored in `assets/` and are referenced locally, so the zip can be copied directly into a static hosting repository.
-
-Contact links included:
-- Instagram: https://www.instagram.com/sringarabysouganndh/
-- WhatsApp: +91 73061 02762
-- Email: subrusound@gmail.com
-
-
-Note: if index.html is opened directly from an Android Files/content:// preview, some relative images may appear blank because the previewer does not resolve the assets folder. After extracting the zip and opening/hosting the folder normally, the local image paths resolve correctly.
+Replace the contents of your Git repository with the files in this ZIP.
