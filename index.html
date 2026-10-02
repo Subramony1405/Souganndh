@@ -26,7 +26,7 @@ button,a{-webkit-tap-highlight-color:transparent}
 .nav{position:absolute;z-index:5;top:0;left:0;width:100%;padding:14px 16px}
 .nav-inner{width:min(1120px,100%);margin:auto;display:flex;align-items:center;justify-content:space-between;gap:12px}
 .nav-brand{display:flex;align-items:center;gap:9px;color:#fff;font-family:"Cormorant Garamond",Georgia,serif;font-size:1.02rem;font-weight:500;letter-spacing:.01em}
-.nav-brand img{width:38px;height:38px;object-fit:cover;border-radius:50%;border:1px solid rgba(230,197,125,.7)}
+.nav-brand img{width:46px;height:46px;object-fit:cover;border-radius:50%;border:1px solid rgba(230,197,125,.7)}
 .nav-links{display:flex;gap:8px;align-items:center}
 .nav-links a{font-size:.72rem;color:#fff;padding:9px 11px;border:1px solid rgba(255,255,255,.2);border-radius:999px;background:rgba(0,0,0,.12);backdrop-filter:blur(8px)}
 
@@ -86,7 +86,7 @@ h2{font-size:clamp(2.2rem,6.6vw,4rem);line-height:1.02;color:var(--wine);margin:
 .look:nth-child(2){grid-column:span 5;grid-row:span 2}
 .look:nth-child(3){grid-column:span 5;grid-row:span 2}
 .look:nth-child(4){grid-column:span 5;grid-row:span 2}
-.look:nth-child(5){grid-column:span 7;grid-row:span 2}
+.look:nth-child(5),.look:nth-child(6){grid-column:span 5;grid-row:span 2}
 .look-caption{position:absolute;left:10px;bottom:10px;background:rgba(40,8,19,.75);color:#fff;border:1px solid rgba(230,197,125,.45);padding:7px 10px;border-radius:999px;font-size:.66rem;letter-spacing:.08em;text-transform:uppercase}
 
 /* Contact */
@@ -105,6 +105,11 @@ footer{background:#210610;color:#cdbec2;padding:28px 16px 34px;text-align:center
 footer strong{font-family:"Cormorant Garamond",Georgia,serif;font-size:1.35rem;color:#fff}
 .footer-links{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:10px}.footer-links a{color:#fff}
 
+/* Style 6: wider horizontal lookbook tile */
+@media (min-width:801px){
+  .look:nth-child(6){grid-column:span 7;grid-row:span 2}
+}
+
 @media (max-width:800px){
   .nav-links a:nth-child(1){display:none}
   .about-grid,.contact-grid{grid-template-columns:1fr}
@@ -114,11 +119,11 @@ footer strong{font-family:"Cormorant Garamond",Georgia,serif;font-size:1.35rem;c
   .lookbook-grid{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:180px}
   .look:nth-child(n){grid-column:span 1;grid-row:span 1}
   .look:nth-child(1){grid-column:span 2;grid-row:span 2}
-  .look:nth-child(5){grid-column:span 2}
+  .look:nth-child(5),.look:nth-child(6){grid-column:span 1}
 }
 @media (max-width:560px){
   .container{width:min(100% - 24px,520px)}
-  .nav{padding:10px 12px}.nav-brand span{display:none}.nav-brand img{width:36px;height:36px}
+  .nav{padding:10px 12px}.nav-brand span{display:none}.nav-brand img{width:48px;height:48px}
   .nav-links a{font-size:.64rem;padding:8px 9px}
   .hero{padding:76px 12px 32px}.hero::after{inset:7px}.logo{width:150px;margin-bottom:17px}.kicker{font-size:.6rem;letter-spacing:.18em}
   h1{font-size:clamp(2.4rem,9vw,4rem)}.hero-copy{font-size:1.08rem}.btn{width:min(100%,270px)}
@@ -140,7 +145,7 @@ strong,h1,h2,h3{font-weight:500}
   .container{width:calc(100% - 20px);max-width:520px}
   .nav{padding:9px 10px}
   .nav-inner{gap:6px}
-  .nav-brand img{width:32px;height:32px}
+  .nav-brand img{width:40px;height:40px}
   .nav-links{gap:5px}
   .nav-links a{font-size:.58rem;padding:7px 8px}
   .hero{min-height:auto;padding:82px 10px 30px}
@@ -213,7 +218,7 @@ strong,h1,h2,h3{font-weight:500}
 
 
 /* Refined luxury portrait pass */
-.nav-brand img{width:44px;height:44px}
+.nav-brand img{width:50px;height:50px}
 .nav-brand{font-family:"Cormorant Garamond",Georgia,serif;font-size:1.16rem;font-weight:600}
 .nav-links a{font-size:.78rem;padding:11px 14px;display:inline-flex;align-items:center;gap:6px}
 .nav-icon{width:15px;height:15px;display:inline-block;flex:none}
@@ -229,13 +234,13 @@ h2{font-size:clamp(2rem,5.5vw,3.55rem)}
 .contact-card .btn{min-height:49px;padding:12px 19px;font-size:.9rem}
 
 @media (max-width:800px){
-  .nav-brand img{width:43px;height:43px}
+  .nav-brand img{width:49px;height:49px}
   .product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
 @media (max-width:560px){
   .nav{padding:8px 10px}
   .nav-inner{gap:7px}
-  .nav-brand img{width:42px;height:42px}
+  .nav-brand img{width:48px;height:48px}
   .nav-brand span{display:inline;font-size:.96rem;white-space:nowrap}
   .nav-links{gap:5px;flex-wrap:nowrap}
   .nav-links a{font-size:.62rem;padding:9px 9px;gap:4px}
@@ -252,7 +257,7 @@ h2{font-size:clamp(2rem,5.5vw,3.55rem)}
   .card p{font-size:.76rem}
   .lookbook-grid{grid-auto-rows:175px;gap:8px}
   .look:nth-child(1){grid-column:span 2;grid-row:span 2}
-  .look:nth-child(2),.look:nth-child(3),.look:nth-child(4),.look:nth-child(5){grid-column:span 1;grid-row:span 1}
+  .look:nth-child(2),.look:nth-child(3),.look:nth-child(4),.look:nth-child(5),.look:nth-child(6){grid-column:span 1;grid-row:span 1}
   .lookbook .intro h2{font-size:clamp(1.28rem,6.15vw,2.18rem);white-space:nowrap;letter-spacing:-.045em}
   .lookbook .lead{font-size:1.02rem;max-width:350px}
   .social{min-height:78px;padding:15px 14px;gap:11px}
@@ -362,6 +367,7 @@ h2{font-size:clamp(2rem,5.5vw,3.55rem)}
       <figure class="look"><img src="assets/style-03.jpg" alt="Woman wearing a purple saree and gold jewellery"><figcaption class="look-caption">Everyday elegance</figcaption></figure>
       <figure class="look"><img src="assets/style-04.jpg" alt="Woman wearing a brown saree with bangles and jewellery"><figcaption class="look-caption">Festive glow</figcaption></figure>
       <figure class="look"><img src="assets/style-05.jpg" alt="Woman wearing colourful jewellery in a traditional saree"><figcaption class="look-caption">Celebration ready</figcaption></figure>
+      <figure class="look"><img src="assets/style-06.jpg" alt="Jewellery styled in a traditional look"><figcaption class="look-caption">Timeless Elegance</figcaption></figure>
     </div>
   </div>
 </section>
